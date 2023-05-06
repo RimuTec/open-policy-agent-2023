@@ -13,14 +13,14 @@ name: 'rimutec'
 services:
    # change the service name, the container name and the hostname for each dev container that connects
    # to the same virtual network. [Manfred, 29jul2022]
-   typescript-dev:
-      image: typescript-dev:0.1
+   opa-example-dev:
+      image: opa-example-dev:0.1
       build: .
-      container_name: typescript-dev
-      hostname: typescript-dev.local
+      container_name: opa-example-dev
+      hostname: opa-example-dev.local
       working_dir: /work
       ports:
-         - "30430:3000" # By default express.js uses port 3000
+         - "30507:3000" # By default express.js uses port 3000
          # Using double quotes for port mapping to avoid YAML reading it as a number with a different base
          # e.g. "3333:22" would result in port numbers greater than 130000 which are clearly invalid.
          # Without double quotes YAML interprets it as a number based on 22. [Manfred, 24aug2022]
