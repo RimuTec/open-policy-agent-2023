@@ -16,6 +16,7 @@
             "ms-vsliveshare.vsliveshare",
             "rtbenfield.vscode-jest-test-adapter",
             "dbaeumer.vscode-eslint",
+            "tsandall.opa",
          ],
       }
    },

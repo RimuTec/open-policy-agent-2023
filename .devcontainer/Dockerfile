@@ -29,3 +29,15 @@ RUN npm install -g typescript@5.0.4
 # Last version check on 07 May 2023.
 # Newer versions might be available at https://www.npmjs.com/search?q=typescript
 # [Manfred]
+
+
+################################################################################
+# Install OPA
+WORKDIR /usr/local/bin
+RUN curl -L -o opa https://openpolicyagent.org/downloads/v0.52.0/opa_linux_amd64_static
+# Last version check on 07 May 2023.
+# Newer versions might be available at https://www.openpolicyagent.org/docs/latest/#running-opa
+# [Manfred]
+
+# Set permissions on the OPA executable:
+RUN chmod 755 ./opa
