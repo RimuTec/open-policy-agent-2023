@@ -1,5 +1,6 @@
 # #!/bin/sh
 
+################################################################################
 echo Running script ./.devcontainer/init.sh
 
 ################################################################################
@@ -12,4 +13,12 @@ runuser -l node -c 'cd /work && git config branch.autosetuprebase always'
 # option -l specifies the user on whose behalf the commmand is executed. Note that
 #           this script runs as root. [Manfred, 12 Feb 2023]
 
+################################################################################
+# start OPA agent as a demon in the background
+echo ************************************
+echo starting OPA as background demon ...
+runuser -u node -- opa run -w -s /work/service/src/policies &
+
+
+################################################################################
 echo Script ./.devcontainer/init.sh finished
