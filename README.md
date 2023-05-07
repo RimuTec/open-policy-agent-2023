@@ -1,6 +1,6 @@
 # Open Policy Agent in Dev Container (TypeScript)
 
-This is the complete source code for the article ["Open Policy Agent in a Dev Container"]().
+This is the complete source code for the article ["Open Policy Agent in a Dev Container"](https://manfredmlange.medium.com/using-open-policy-agent-with-express-js-9cbcc96478d).
 
 ## Prerequisites
 
